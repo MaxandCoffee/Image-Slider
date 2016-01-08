@@ -65,7 +65,7 @@
         
         $("#slider > img").hover(
             function() {
-                stopLoop();
+                window.clearInterval(loop);
             },
             function() {
                 startSlider();
